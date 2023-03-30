@@ -68,6 +68,7 @@ var _ = Describe("Perform", func() {
 				Expect(fakeLocalRep.PerformCallCount()).To(Equal(1))
 				_, actualWork := fakeLocalRep.PerformArgsForCall(0)
 				Expect(actualWork).To(Equal(requestedWork))
+
 			})
 
 			It("emits the request metrics", func() {
